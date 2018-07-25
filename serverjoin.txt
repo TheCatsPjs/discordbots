@@ -1,0 +1,7 @@
+christianbot
+
+https://discordapp.com/oauth2/authorize?client_id=471276412507258881&scope=bot
+
+franklinbot
+
+https://discordapp.com/oauth2/authorize?client_id=471388816440164372&scope=bot
