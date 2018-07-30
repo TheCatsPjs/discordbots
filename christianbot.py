@@ -1,6 +1,6 @@
 import discord
 
-swear = ["heck", "turd", "frick", "freak", "jeez", "darn", "dang", "golly", "gee", "piss", "damn", "ass", "gosh", "dong", "crap", "shit", "fuck", "bitch", "bastard"]
+swear = ["heck", "dagnabbit", "nabbit", "jerk", "dumby", "butt", "slut", "turd", "frick", "freak", "jeez", "darn", "dang", "golly", "gee", "piss", "damn", "ass", "gosh", "dong", "crap", "shit", "fuck", "bitch", "bastard"]
 
 client = discord.Client()
 
@@ -8,6 +8,8 @@ client = discord.Client()
 async def on_message(message):
     # we do not want the bot to reply to itself
     if message.author == client.user:
+        return
+    if message.author.bot:
         return
 
 #message is the thing we're searching for
